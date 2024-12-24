@@ -198,50 +198,155 @@ If you have a repository and want to copy it to your local machine, use the git 
 ```
 git clone repository-url
 ```
-•	The repository-url can be an HTTPS URL, SSH URL, or a local file path.                
-•	After cloning, you will have a complete copy of the repository, including all files and version history.              
+•	The repository-url can be an HTTPS URL, SSH URL, or a local file path.                            
+•	After cloning, you will have a complete copy of the repository, including all files and version history.                          
 
 # How to Connect a Local Repository to a Remote Repository
 
-1. Generate an SSH Key (One-Time Setup)
-To enable secure communication between your local machine and a remote repository (e.g., GitHub):
-1.	Run the following command to generate an SSH key:
+1. Generate an SSH Key (One-Time Setup)               
+To enable secure communication between your local machine and a remote repository (e.g., GitHub):        
+1.	Run the following command to generate an SSH key:          
 ```
 ssh-keygen -o
 ```
-•	The key will be saved in the .ssh directory on your machine.
-2.	Locate the generated key in the .ssh folder (typically ~/.ssh/id_rsa.pub).
+•	The key will be saved in the .ssh directory on your machine.    
+
+2.	Locate the generated key in the .ssh folder (typically ~/.ssh/id_rsa.pub).          
  ![alt text](image/16.png)
  ![alt text](image/17.png)
 
 2. Add the SSH Key to GitHub
-1.	Copy the contents of the public key file (id_rsa.pub). You can use the following command:
+1.	Copy the contents of the public key file (id_rsa.pub). You can use the following command:         
 ```
 cat ~/.ssh/id_rsa.pub
 ```
-3.	Log in to your GitHub account.
-4.	Navigate to Settings → SSH and GPG keys.
-5.	Click on New SSH key.
-6.	Provide a title for the key (e.g., "My Laptop SSH Key").
-7.	Paste the copied key into the Key field.
-8.	Click Add SSH key.
-Now, your local machine (client) and GitHub (server) are connected. This allows GitHub to verify your identity when you push changes.
+3.	Log in to your GitHub account.                   
+4.	Navigate to Settings → SSH and GPG keys.                 
+5.	Click on New SSH key.                         
+6.	Provide a title for the key (e.g., "My Laptop SSH Key").            
+7.	Paste the copied key into the Key field.                    
+8.	Click Add SSH key.                  
+Now, your local machine (client) and GitHub (server) are connected. This allows GitHub to verify your identity when you push changes.         
  ![alt text](image/18.png)
 
-3. Connect the Local Repository to a Remote Repository
-Run the following command to link your local repository to the remote repository:
+3. Connect the Local Repository to a Remote Repository          
+Run the following command to link your local repository to the remote repository:             
 ```
 git remote add origin <repository-url>
 ```
-•	Replace <repository-url> with the SSH URL of your GitHub repository.
-•	The origin keyword is an alias for the remote repository.
-4. Push Code from Local to Remote
-Use the following command to push your code to the remote repository for the first time:
+•	Replace <repository-url> with the SSH URL of your GitHub repository.               
+•	The origin keyword is an alias for the remote repository.                
+
+4. Push Code from Local to Remote                   
+Use the following command to push your code to the remote repository for the first time:           
 ```
 git push -u origin main
 ```
-•	-u sets the upstream branch so that future pushes can be done using git push.
-•	main is the branch name. Replace it with the appropriate branch name if different.
+•	-u sets the upstream branch so that future pushes can be done using git push.              
+•	main is the branch name. Replace it with the appropriate branch name if different.           
  ![alt text](image/19.png)
  ![alt text](image/20.png)
 
+# Tagging
+1.	View Tags: Displays all tags associated with the project.          
+```
+git tag
+``` 
+
+1.	Create a Tag:      
+•	Lightweight Tagging: A simple tag pointing to a commit without additional metadata.
+git tag tagname         
+•	Annotated Tagging: Includes additional metadata such as the author's name, date, and a message. This is typically used for releases. 
+```           
+git tag -a tagname -m "annotation message"  
+```     
+2.	View Tag Details: Displays detailed information about the specified tag.                     
+``` 
+git show tagname
+``` 
+
+3.	Push a Tag to Remote:
+``` 
+git push origin tagname
+``` 
+
+4.	View Commit Logs with Tags:Shows commit checksums along with their messages.
+``` 
+git log --pretty=oneline
+``` 
+
+# Branching
+Branches allow you to work on a specific feature or fix bugs without affecting the main branch.
+
+1.	Why Use Branching?                       
+•	Prevent errors in the main branch during development.                  
+•	Facilitate isolated work on new features.               
+
+2.	Create a Branch:               
+•	Using checkout:    
+```           
+git checkout -b branchname  
+```            
+•	Using switch (recommended for newer Git versions):    
+```      
+git switch -c branchname
+```
+3.	View Branches:
+•	Show local branches:              
+```
+git branch
+```
+•	Show all branches (local and remote):             
+```
+git branch --all
+```
+•	The * symbol indicates the branch you are currently on.              
+
+4.	Switch Between Branches:
+•	Switch to a specific branch:
+```
+git switch branchname
+```
+•	Switch to the previous branch:
+```
+git switch -
+```
+•	Using checkout (older syntax):
+```
+git checkout branchname
+```
+
+5.	Delete a Branch:
+```
+git branch -d branchname
+```
+
+6.	Push a Branch to Remote:
+```
+git push origin branchname
+```
+
+# Commits and Snapshots
+1.	How Git Tracks Changes:                 
+•	Each commit creates a snapshot of your files and assigns a unique identifier called a checksum.  
+
+2.	Pointers:             
+•	Git uses pointers to track the latest commit in a branch.          
+•	When creating a new branch, the pointer initially points to the same commit as the main branch.   
+
+# Merging Branches
+1.	Why Merge?              
+•	Combine changes from one branch into another, typically merging a feature branch into the main branch. 
+2.	Steps to Merge:          
+•	Ensure you are on the target branch (e.g., main):           
+```
+git switch main
+```
+•	Pull the latest changes to ensure the branch is up-to-date:           
+```
+git pull origin main
+```
+•	Merge the desired branch into the main branch:
+```
+git merge branchname
+```
