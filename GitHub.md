@@ -386,3 +386,39 @@ git pull origin main
 ```
 git merge branchname
 ```
+# Stashing
+
+Temporarily save changes without committing them:
+```
+git stash
+```
+Apply stashed changes:
+```
+git stash apply
+```
+# Rebasing
+
+Move or combine commits from one branch onto another:
+```
+git rebase branchname
+``` 
+
+# Resolving Merge Conflicts
+
+When merging, conflicts may arise if changes overlap. Git will indicate the conflicting files.
+Resolve conflicts manually in your code editor, then add and commit the resolved files:
+```
+git add conflicted_file
+git commit -m "Resolved merge conflict"
+```
+
+# Fetching and Pulling
+
+Fetch: Retrieve changes from the remote without applying them to your local branch:
+```
+git fetch
+```
+Pull: Fetch and apply changes from the remote to your local branch:
+```
+git pull origin branchname
+```
