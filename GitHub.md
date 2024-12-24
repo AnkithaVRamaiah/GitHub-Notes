@@ -83,8 +83,8 @@ git init -b main
 •	To update Git, download the latest version from the Git website.           
 •	Alternatively, use the following commands to rename the default branch:         
 ```
--	git init
--	git branch -m main
+git init
+git branch -m main or git branch -M main
 ```
 ![alt text](image-5.png)
 
