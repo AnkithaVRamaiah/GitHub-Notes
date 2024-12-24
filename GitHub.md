@@ -35,17 +35,17 @@ https://git-scm.com/downloads
 ```
 •	git --version            
 ```
-![alt text](image.png)
+![alt text](image/0.png)
 
 # Configuring Git    
 Git needs to be configured so we know who is making changes.          
-![alt text](image-1.png)
+![alt text](image/1.png)
  
 # Check Existing Configuration
 ```
 git config --global –list
 ```
- ![alt text](image-2.png)
+ ![alt text](image/2.png)
 
 Set User Name and Email      
 ```
@@ -54,7 +54,7 @@ git config --global user.name "your-name"
 ```
 git config --global user.email "your-email"
 ```
-![alt text](image-3.png)
+![alt text](image/-3.png)
  
 We configure Git to provide information about who is making changes to the repository.     
 Configuration ensures that all changes, commits, and contributions are properly attributed to the correct user, making it easier to track and manage work in collaborative environments.
@@ -73,7 +73,7 @@ Configuration ensures that all changes, commits, and contributions are properly 
 git init
 ```
 By default, Git creates a branch named master.        
-![alt text](image-4.png)
+![alt text](image/4.png)
 
 Initialize with a Custom Branch Name:     
 ```
@@ -86,7 +86,7 @@ git init -b main
 git init
 git branch -m main or git branch -M main
 ```
-![alt text](image-5.png)
+![alt text](image/5.png)
 
 # Understanding the .git Folder      
 The .git folder contains all the metadata for the repository, including:        
@@ -98,11 +98,11 @@ Basic Git Commands
 ```
 git status
 ```
-![alt text](image-6.png)
+![alt text](image/6.png)
 
 2.	Create a File              
 •	Create a new file in the working directory.                         
-![alt text](image-7.png)
+![alt text](image/7.png)
 
 3.	Track Changes                    
 •	Add the file to the staging area:                       
@@ -113,8 +113,8 @@ if you want to add multiple files
 ```
 git add .
 ```
-![alt text](image-8.png)
-![alt text](image-9.png)
+![alt text](image/8.png)
+![alt text](image/9.png)
 
 4.	Save or Commit Changes                
 •	Commit the changes with a message:                       
@@ -122,14 +122,14 @@ git add .
 git commit -m "your-message"
 ```
 •	After committing, Git starts tracking the file.                  
-![alt text](image-10.png) 
+![alt text](image/10.png) 
 
 # Git and Checksum 
 •	Git creates a checksum for every commit to uniquely identify it.                 
 •	The checksum is a 40-character hexadecimal string.            
 •	In some cases, Git displays only the first 7 characters of the checksum for brevity            
 Example of a checksum:              
-![alt text](image-11.png)
+![alt text](image/11.png)
 
 # Viewing Commit History             
 •	Use git log to see the log of all commits.               
@@ -138,7 +138,7 @@ o	Full 40-character checksum
 o	Commit author                
 o	Date of the commit                 
 o	Commit message                   
-![alt text](image-12.png)
+![alt text](image/12.png)
 
 # Skipping the Staging Step                  
 •	If you want to skip adding changes to the staging area before committing, use the -a flag.  
@@ -147,7 +147,7 @@ o	Command:
 git commit -a -m "message"
 ```
 o	This automatically stages all modified files (but not new, untracked files) and commits them in one step.                 
-![alt text](image-13.png)
+![alt text](image/13.png)
 
 # Git Commands for Managing Changes and Files           
 1. Git diff Command                        
@@ -180,13 +180,13 @@ Output
 •	The output shows line-by-line differences:             
 o	Lines added are prefixed with +.               
 o	Lines removed are prefixed with -.                  
-![alt text](image-14.png)
+![alt text](image/14.png)
  
 •	To see differences between the staging area and the last commit:                       
 ```
 git diff --staged
 ```
-![alt text](image-15.png)
+![alt text](image/15.png)
  
 1. Remove a File from Git Repository            
 To remove a file from the Git repository while keeping it in the local file system, use:           
@@ -211,8 +211,8 @@ ssh-keygen -o
 ```
 •	The key will be saved in the .ssh directory on your machine.
 2.	Locate the generated key in the .ssh folder (typically ~/.ssh/id_rsa.pub).
- ![alt text](image-16.png)
- ![alt text](image-17.png)
+ ![alt text](image/16.png)
+ ![alt text](image/17.png)
 
 2. Add the SSH Key to GitHub
 1.	Copy the contents of the public key file (id_rsa.pub). You can use the following command:
@@ -226,7 +226,7 @@ cat ~/.ssh/id_rsa.pub
 7.	Paste the copied key into the Key field.
 8.	Click Add SSH key.
 Now, your local machine (client) and GitHub (server) are connected. This allows GitHub to verify your identity when you push changes.
- ![alt text](image-18.png)
+ ![alt text](image/18.png)
 
 3. Connect the Local Repository to a Remote Repository
 Run the following command to link your local repository to the remote repository:
@@ -242,6 +242,6 @@ git push -u origin main
 ```
 •	-u sets the upstream branch so that future pushes can be done using git push.
 •	main is the branch name. Replace it with the appropriate branch name if different.
- ![alt text](image-19.png)
- ![alt text](image-20.png)
+ ![alt text](image/19.png)
+ ![alt text](image/20.png)
 
