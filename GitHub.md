@@ -5,11 +5,11 @@ When working on a project, we often make multiple updates and save these updates
 # Why Use Git?
 ***Collaboration***
 
-Git allows multiple developers to work on the same project simultaneously without overwriting each other’s changes.                                  
-Using branches, team members can work on different features or bug fixes in isolation and then merge their work into the main project when ready.                      
-It provides tools to resolve conflicts if two people modify the same part of the code.             
+• Git allows multiple developers to work on the same project simultaneously without overwriting each other’s changes.                                  
+• Using branches, team members can work on different features or bug fixes in isolation and then merge their work into the main project when ready.                      
+• It provides tools to resolve conflicts if two people modify the same part of the code.             
 
-Example:                        
+***Example:***                        
 Developer A works on a new feature, and Developer B fixes a bug. Both can work independently, and Git will help integrate their changes.                     
 
 ***Versioning***
@@ -20,13 +20,13 @@ Each time you make a change and commit it, Git creates a snapshot of your projec
 • Compare different versions of the code.                        
 • Identify when and by whom a change was made.                     
 
-Benefits of Versioning:
+***Benefits of Versioning:***
 
 • Traceability: You can see the entire history of changes and who made them.               
 • Recovery: If you introduce a bug, you can roll back to a previous working version.                   
 • Experimentation: You can try new ideas on a separate branch without affecting the main codebase.     
 
-Example:                               
+***Example:***                               
 Version 1.0 of your project is stable, and you want to add a new feature. Using Git, you can branch out, develop the feature, and return to Version 1.0 anytime if needed.               
 
 # Types of Version Control Systems     
@@ -103,7 +103,8 @@ git init
 By default, Git creates a branch named master.        
 ![alt text](image/4.png)
 
-# Initialize with a Custom Branch Name:                   
+# Initialize with a Custom Branch Name:    
+```              
 git init -b main
 ```
 •	If your Git version is older than 2.28.0, the -b option won't work.     
