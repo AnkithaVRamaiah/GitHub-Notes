@@ -3,37 +3,37 @@ Git is a distributed version control system.
 # What is Version Control?
 When working on a project, we often make multiple updates and save these updates in different folders to access previous versions when needed. Version control simplifies this process by tracking changes in a structured way.
 # Why Use Git?
-*Collaboration*
+***Collaboration***                           
 If multiple people are working on the same project and need to collaborate on code, Git allows seamless integration and management of their work.
 
-# Types of Version Control Systems
-# 1.	Local Version Control
-o	In this system, developers save projects on their local machines.     
-o	Disadvantage: If the machine crashes, all files are lost.  
+# Types of Version Control Systems     
 
-# 2.	Centralized Version Control System (CVCS)
-o	A central repository is used for collaboration. Developers copy the repository to their local machines, make changes, and commit these changes back to the central server.                              
+# 1.	Local Version Control           
+In this system, developers save projects on their local machines.     
+• Disadvantage: If the machine crashes, all files are lost.  
 
-o	Advantages:                  
-	Everyone has access to the central repository.     
-	Changes are visible to all collaborators after each commit.                 
-o	Disadvantages:                               
-	If the central server goes down, all progress and access to the repository are lost.                   
+# 2.	Centralized Version Control System (CVCS)          
+A central repository is used for collaboration. Developers copy the repository to their local machines, make changes, and commit these changes back to the central server.                              
+•	Advantages:                               
+  •	Everyone has access to the central repository.     
+  •	Changes are visible to all collaborators after each commit.                 
+•	Disadvantages:                                           
+  •	If the central server goes down, all progress and access to the repository are lost.                   
 
-# 3.	Distributed Version Control System (DVCS)
-o	Each user has a full copy of the repository, including the complete version history.
-o	Advantages:
-	Local backups of the repository exist for every user.
-	Collaboration is seamless, even if the central server goes down.
+# 3.	Distributed Version Control System (DVCS)          
+Each user has a full copy of the repository, including the complete version history.
+•	Advantages:
+  •	Local backups of the repository exist for every user.
+  •	Collaboration is seamless, even if the central server goes down.
 
 # Downloading Git
-•	Git download link:          
+Git download link:          
 ```
 https://git-scm.com/downloads
 ```
-•	After installation, verify Git by running            
+After installation, verify Git by running            
 ```
-•	git --version            
+git --version            
 ```
 ![alt text](image/0.png)
 
@@ -59,23 +59,24 @@ git config --global user.email "your-email"
 We configure Git to provide information about who is making changes to the repository.     
 Configuration ensures that all changes, commits, and contributions are properly attributed to the correct user, making it easier to track and manage work in collaborative environments.
 
-	Identify Contributors              
-•	Each commit is tagged with the user.name and user.email of the person who made the change, helping teams track contributions.           
-	Improve Collaboration              
-•	In a team setting, knowing who made specific changes helps in communication and accountability. 
+***Identify Contributors***                         
+• Each commit is tagged with the user.name and user.email of the person who made the change, helping teams track contributions.  
 
-	Enable Git Functionality     
-•	Git requires a user identity (user.name and user.email) to associate commits with a specific person. Without this configuration, Git may display warnings or fail to commit changes.          
+***Improve Collaboration***                             
+• In a team setting, knowing who made specific changes helps in communication and accountability. 
+
+***	Enable Git Functionality***     
+• Git requires a user identity (user.name and user.email) to associate commits with a specific person. Without this configuration, Git may display warnings or fail to commit changes.          
 
 # Creating a Local Repository 
-*Initialize a Repository:*   
+***Initialize a Repository:***  
 ```
 git init
 ```
 By default, Git creates a branch named master.        
 ![alt text](image/4.png)
 
-Initialize with a Custom Branch Name:     
+***Initialize with a Custom Branch Name:***     
 ```
 git init -b main
 ```
