@@ -3,7 +3,7 @@ Git is a distributed version control system.
 # What is Version Control?
 When working on a project, we often make multiple updates and save these updates in different folders to access previous versions when needed. Version control simplifies this process by tracking changes in a structured way.
 # Why Use Git?
-***Collaboration***                           
+***Collaboration***                                          
 If multiple people are working on the same project and need to collaborate on code, Git allows seamless integration and management of their work.
 
 # Types of Version Control Systems     
@@ -14,17 +14,17 @@ In this system, developers save projects on their local machines.
 
 # 2.	Centralized Version Control System (CVCS)          
 A central repository is used for collaboration. Developers copy the repository to their local machines, make changes, and commit these changes back to the central server.                              
-•	Advantages:                               
+Advantages:                                                                
   •	Everyone has access to the central repository.     
   •	Changes are visible to all collaborators after each commit.                 
-•	Disadvantages:                                           
+Disadvantages:                                                                        
   •	If the central server goes down, all progress and access to the repository are lost.                   
 
 # 3.	Distributed Version Control System (DVCS)          
-Each user has a full copy of the repository, including the complete version history.
-•	Advantages:
-  •	Local backups of the repository exist for every user.
-  •	Collaboration is seamless, even if the central server goes down.
+Each user has a full copy of the repository, including the complete version history.                     
+Advantages:                                  
+  •	Local backups of the repository exist for every user.                                                 
+  •	Collaboration is seamless, even if the central server goes down.                                       
 
 # Downloading Git
 Git download link:          
