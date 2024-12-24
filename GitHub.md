@@ -201,4 +201,47 @@ git clone repository-url
 •	The repository-url can be an HTTPS URL, SSH URL, or a local file path.                
 •	After cloning, you will have a complete copy of the repository, including all files and version history.              
 
+# How to Connect a Local Repository to a Remote Repository
+
+1. Generate an SSH Key (One-Time Setup)
+To enable secure communication between your local machine and a remote repository (e.g., GitHub):
+1.	Run the following command to generate an SSH key:
+```
+ssh-keygen -o
+```
+•	The key will be saved in the .ssh directory on your machine.
+2.	Locate the generated key in the .ssh folder (typically ~/.ssh/id_rsa.pub).
+ ![alt text](image-16.png)
+ ![alt text](image-17.png)
+
+2. Add the SSH Key to GitHub
+1.	Copy the contents of the public key file (id_rsa.pub). You can use the following command:
+```
+cat ~/.ssh/id_rsa.pub
+```
+3.	Log in to your GitHub account.
+4.	Navigate to Settings → SSH and GPG keys.
+5.	Click on New SSH key.
+6.	Provide a title for the key (e.g., "My Laptop SSH Key").
+7.	Paste the copied key into the Key field.
+8.	Click Add SSH key.
+Now, your local machine (client) and GitHub (server) are connected. This allows GitHub to verify your identity when you push changes.
+ ![alt text](image-18.png)
+
+3. Connect the Local Repository to a Remote Repository
+Run the following command to link your local repository to the remote repository:
+```
+git remote add origin <repository-url>
+```
+•	Replace <repository-url> with the SSH URL of your GitHub repository.
+•	The origin keyword is an alias for the remote repository.
+4. Push Code from Local to Remote
+Use the following command to push your code to the remote repository for the first time:
+```
+git push -u origin main
+```
+•	-u sets the upstream branch so that future pushes can be done using git push.
+•	main is the branch name. Replace it with the appropriate branch name if different.
+ ![alt text](image-19.png)
+ ![alt text](image-20.png)
 
