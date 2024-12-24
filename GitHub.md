@@ -5,6 +5,7 @@ When working on a project, we often make multiple updates and save these updates
 # Why Use Git?
 ***Collaboration***                                          
 If multiple people are working on the same project and need to collaborate on code, Git allows seamless integration and management of their work.
+***Versioning*** 
 
 # Types of Version Control Systems     
 
@@ -54,7 +55,7 @@ git config --global user.name "your-name"
 ```
 git config --global user.email "your-email"
 ```
-![alt text](image/-3.png)
+![alt text](image/3.png)
  
 We configure Git to provide information about who is making changes to the repository.     
 Configuration ensures that all changes, commits, and contributions are properly attributed to the correct user, making it easier to track and manage work in collaborative environments.
