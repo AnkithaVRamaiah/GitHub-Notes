@@ -38,10 +38,6 @@
 
 ---
 
-Here are your responses in the style you're aiming for in an interview:
-
----
-
 **6. How do you create a new Git repository?**
 
 "To create a new Git repository, you simply run the command `git init` in the directory where you want to store your project. This will initialize an empty Git repository in that directory, which allows you to start tracking changes to files and creating commits. After initializing the repository, you can start adding files to it and begin version controlling your project."
@@ -69,10 +65,6 @@ Here are your responses in the style you're aiming for in an interview:
 **10. How do you stage files for a commit in Git?**
 
 "To stage files for a commit in Git, you use the `git add` command. You can stage a specific file by running `git add <file-name>`, or if you want to stage all modified files, you can run `git add .`. Staging files means you’re preparing them to be included in your next commit, but they won’t be committed until you run `git commit`."
-
----
-
-Here are your responses for these Git-related questions in a conversational interview style:
 
 ---
 
@@ -106,10 +98,6 @@ Here are your responses for these Git-related questions in a conversational inte
 
 ---
 
-Here are your answers for the next set of Git-related questions:
-
----
-
 **16. How do you switch between branches in Git?**
 
 "To switch between branches in Git, you use the `git checkout <branch-name>` command. This will move you from your current branch to the one you specify. If you’re using Git version 2.23 or later, there's also the `git switch <branch-name>` command, which is a more intuitive way to switch branches. It does the same thing but with a more user-friendly syntax."
@@ -140,9 +128,7 @@ Here are your answers for the next set of Git-related questions:
 
 ---
 
-
 ### Intermediate Git and GitHub Questions
-Here are your answers to the next set of Git-related questions:
 
 ---
 
@@ -183,10 +169,6 @@ On the other hand, `git remote add` is used to add a new remote repository to yo
 
 ---
 
-Here are your answers to the next set of Git and GitHub-related questions:
-
----
-
 **26. How do you fork a repository on GitHub?**
 
 "To fork a repository on GitHub, you simply go to the repository’s page on GitHub and click the 'Fork' button, typically located at the top-right of the page. This creates a copy of the repository under your own GitHub account. You can then clone the forked repository to your local machine and start making changes, without affecting the original project."
@@ -216,9 +198,6 @@ Here are your answers to the next set of Git and GitHub-related questions:
 **30. How do you rebase a branch in Git?**
 
 "To rebase a branch in Git, you first need to make sure you're on the branch you want to rebase. For example, if you want to rebase the 'feature' branch onto 'main', you would first check out the 'feature' branch using `git checkout feature`. Then, you run the command `git rebase main`. This will reapply your commits on top of the 'main' branch, effectively moving your branch’s commits to the latest state of 'main'. If there are any conflicts, Git will prompt you to resolve them before continuing the rebase process with `git rebase --continue`."
-
----
-Here are your answers for the next set of Git-related questions:
 
 ---
 
@@ -255,10 +234,6 @@ If you want to configure them for just a specific repository, omit the `--global
 
 "A tag in Git is a reference to a specific point in Git history, often used to mark release points (like version 1.0 or 2.0). Tags are similar to branches but unlike branches, tags do not change or move. They are typically used for marking important commits, like stable releases or milestones in your project. Tags can be lightweight (just a reference to a commit) or annotated (which includes metadata like the tagger’s name, date, and a message)."
 
----
-
-
-Here are your answers to the next set of Git-related questions:
 
 ---
 
@@ -306,11 +281,8 @@ This will replace the file `myfile.txt` with the version from the commit `123abc
 
 "`git log` is a command that shows the commit history for your current branch. It displays a list of commits along with details like the commit hash, author, date, and commit message. By default, it shows the most recent commits at the top, but you can use various flags and options to customize the output. For example, `git log --oneline` shows each commit in a condensed form with just the commit hash and message, and `git log --graph` shows a visual representation of the commit history with branches."
 
----
-
 
 ### Advanced Git and GitHub Questions
-Here are your answers for the next set of Git-related questions:
 
 ---
 
@@ -347,11 +319,6 @@ Here are your answers for the next set of Git-related questions:
 To use it, first check out the branch where you want to apply the commit, and then run:  
 `git cherry-pick <commit-hash>`.  
 For example, `git cherry-pick 123abc` will apply the commit with the hash `123abc` to your current branch."
-
----
-
-
-Here are your answers for the next set of Git-related questions:
 
 ---
 
@@ -399,11 +366,6 @@ To use `git bisect`:
 
 ---
 
-
-Here are your answers for the next set of Git-related questions:
-
----
-
 **51. How does Git's garbage collection work?**
 
 "Git's garbage collection (GC) is the process of cleaning up unnecessary files and optimizing the repository to save space and improve performance. Over time, Git accumulates unreachable objects (like old commits or objects no longer referenced by any branch) which can take up space. The `git gc` command is used to perform this cleanup. It compresses file history, removes unreachable objects, and packs loose objects into a more efficient storage format. Running `git gc` helps keep the repository lean and fast, especially for large projects."
@@ -444,11 +406,6 @@ In short, be aware that working in a detached HEAD state means your changes migh
 **55. What is the purpose of the `git blame` command?**
 
 "`git blame` is a command used to show the line-by-line history of a file, identifying who last modified each line and when. It helps track down the origin of specific changes or bugs in the code by displaying the commit hash, author, and timestamp for each line. For example, if you're working on a file and want to know who introduced a specific change, you can run `git blame <file-path>`. This will show you the commit and author responsible for each line of the file, making it useful for code review or debugging."
-
----
-
-
-Here are the answers to your next set of Git-related questions:
 
 ---
 
@@ -495,7 +452,6 @@ You can use `git reflog` to:
 ---
 
 ### Scenario-Based Git and GitHub Questions
-Here are your answers to the next set of Git-related questions:
 
 ---
 
@@ -557,11 +513,6 @@ Once the conflicts are resolved and tested, you can update the pull request on G
    `git push origin <branch-name>`
 
 Reverting changes keeps the history intact and is non-destructive, which is important when working with others in a collaborative environment."
-
----
-
-
-Here are your answers to the next set of Git-related questions:
 
 ---
 
@@ -639,7 +590,6 @@ Here are your answers to the next set of Git-related questions:
 ---
 
 ### Git and GitHub Best Practices
-Here are your answers for the next set of Git-related questions:
 
 ---
 
@@ -701,10 +651,6 @@ Here are your answers for the next set of Git-related questions:
    - **Require signed commits**: Require commits to be signed before merging.
    - **Include administrators**: Make the rule apply to repository administrators as well.
 6. **Save the rule**: Click 'Create' or 'Save changes' to apply the protection rule."
-
----
-
-Here are your answers for the next set of questions:
 
 ---
 
@@ -773,9 +719,7 @@ Here are your answers for the next set of questions:
 
 ---
 
-
 ### Troubleshooting and Debugging in Git
-Here are the answers to your next set of Git-related questions:
 
 ---
 
@@ -842,10 +786,6 @@ Here are the answers to your next set of Git-related questions:
 5. **Push Rejected Due to Large Files**: If you're pushing large files and the repository is using Git LFS, the push can fail. Ensure you're using Git LFS for large files.
 6. **Repository Permissions**: Lack of write permissions or restricted access for the user or team to push to the repository.
 7. **Out of Sync Local Repository**: If your local repository is out of sync with the remote, it may need a `git pull` to merge changes before pushing."
-  
----
-
-Here are the answers to your next set of Git-related questions:
 
 ---
 
@@ -929,7 +869,6 @@ Here are the answers to your next set of Git-related questions:
 ---
 
 ### Git and GitHub Integration
-Here are the answers to your next set of questions related to Git, Jenkins, GitHub, and CI/CD:
 
 ---
 
@@ -1025,9 +964,6 @@ Here are the answers to your next set of questions related to Git, Jenkins, GitH
 4. **Create Deployment Scripts**: Within your workflow file, you can run deployment commands to push code to a server, pull Docker images, or use other deployment tools.
 5. **Automate Tests**: You can add steps to run tests before deployment, ensuring only successful builds are deployed.
 6. **Monitor Deployment**: GitHub Actions allows you to monitor deployment logs and actions in the **Actions** tab of your GitHub repository."
-
----
-Here are the answers to your next set of questions:
 
 ---
 
