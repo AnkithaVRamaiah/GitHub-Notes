@@ -116,7 +116,7 @@ Git needs to be configured so we know who is making changes.
  
 # Check Existing Configuration
 ```
-git config --global –list
+git config --global --list
 ```
  ![alt text](image/2.png)
 
