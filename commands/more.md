@@ -1,7 +1,3 @@
-Here’s a comprehensive list of **Git and GitHub commands** to cover a variety of operations, from basic version control actions to advanced features. Please note that there are many Git commands and related commands for GitHub actions, some of which may be specialized or rarely used. Below are about 300 Git-related commands.
-
----
-
 ### **Git Basics**
 
 1. `git init` – Initialize a new Git repository.
