@@ -231,7 +231,7 @@
   ```
 - **View current Git configuration:**
   ```bash
-  git config --list
+  git config --global --list
   ```
 
 ---
