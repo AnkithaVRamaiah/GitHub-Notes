@@ -1,6 +1,5 @@
 
 ### Basic Git and GitHub Questions
-Here are the answers, as if you're explaining them in an interview:
 
 ---
 
