@@ -1,4 +1,4 @@
-# Table of Contents:
+# Table of Content:
 
 1. [Git (Global Information Tracker)](#git-global-information-tracker)
 2. [What is Version Control?](#what-is-version-control)
